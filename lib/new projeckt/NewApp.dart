@@ -3,6 +3,7 @@ import 'package:birinchi_dastur/new%20projeckt/app_styles/TicketScerean.dart';
 import 'package:flutter/material.dart';
 import 'app_styles/Prifile_screan.dart';
 import 'app_styles/Search_screan.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -39,24 +40,17 @@ class _BottomBarState extends State<BottomBar> {
         ),
       ),
       body: Center(child: _wdgetOpetion[_SelectedIndex]),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _SelectedIndex,
+      bottomNavigationBar: CurvedNavigationBar(
         onTap: _onItemTab,
-        backgroundColor: Colors.blueGrey,
-        elevation: 10,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        selectedItemColor: Colors.blueGrey,
-        unselectedItemColor: const Color(0xFF526480),
+        backgroundColor: Colors.blueAccent,
+        buttonBackgroundColor: Colors.white,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.airplane_ticket_outlined), label: 'Ticket'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.perm_identity_outlined), label: 'Identity')
+          Icon(Icons.home),
+          Icon(Icons.search),
+          Icon(Icons.airplane_ticket_outlined),
+          Icon(Icons.perm_identity_outlined),
         ],
-      ),
+      )
     );
   }
 }

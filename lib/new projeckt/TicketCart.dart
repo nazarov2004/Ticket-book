@@ -57,11 +57,13 @@ class TicedCard extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(
+
                                 height: 24,
                                 child: LayoutBuilder(
                                   builder: (BuildContext context,
                                       BoxConstraints constraints) {
                                     return Flex(
+
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
                                       direction: Axis.horizontal,
@@ -82,7 +84,7 @@ class TicedCard extends StatelessWidget {
                               ),
                             ],
                           )),
-                          const ThinckContainer(isColor: true,),
+                          const ThinckContainer(isColor: null,),
                           Expanded(child: Container()),
                           Text( ticket['Qayerga']['QisqartmaNomi'],
 

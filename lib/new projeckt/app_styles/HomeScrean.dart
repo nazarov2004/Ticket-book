@@ -56,26 +56,18 @@ class HomeScrean extends StatelessWidget {
                   height: 12,
                 ),
                 Container(
+                  height: 60,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(30),
                       color: Colors.grey.shade50),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.search,
-                        color: Color(0xFFBFC205),
-                      ),
-                      const SizedBox(
-                        height: 12,
-                      ),
-                      Text(
-                        "Qidiruv",
-                        style: Styles.headLineStyle4,
-                      )
-                    ],
-                  ),
+                  child: const TextField(
+                     keyboardType: TextInputType.text,
+                    decoration: InputDecoration(icon: Icon(Icons.search),
+                      hintText: 'Qidiruv'
+                    ),
+                  )
                 ),
                 const SizedBox(
                   height: 20,
