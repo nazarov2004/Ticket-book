@@ -42,10 +42,11 @@ class _BottomBarState extends State<BottomBar> {
       body: Center(child: _wdgetOpetion[_SelectedIndex]),
       bottomNavigationBar: CurvedNavigationBar(
         onTap: _onItemTab,
-        backgroundColor: Colors.blueAccent,
-        buttonBackgroundColor: Colors.white,
+        backgroundColor: Colors.blue,
+        buttonBackgroundColor: Colors.blueAccent,
+        color: Colors.white38,
         items: const [
-          Icon(Icons.home),
+          Icon(Icons.home,),
           Icon(Icons.search),
           Icon(Icons.airplane_ticket_outlined),
           Icon(Icons.perm_identity_outlined),
